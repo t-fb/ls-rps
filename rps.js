@@ -12,13 +12,13 @@ const winningScore = 3;
 // player wins round
 function userRoundWin() {
   userScore += 1;
-  console.log('User wins this round!');
+  prompt('User wins this round!');
 }
 
 // comp wins round
 function compRoundWin() {
   compScore += 1;
-  console.log('Computer wins this round!');
+  prompt('Computer wins this round!');
 }
 
 // tally score
@@ -87,6 +87,3 @@ while (true) {
     } else break;
   }
 }
-
-// console.log(VALID_CHOICES, VALID_CHOICES.join(', '));
-// // [ 'rock', 'paper', 'scissors' ] rock, paper, scissors
