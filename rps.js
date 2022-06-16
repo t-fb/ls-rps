@@ -68,7 +68,7 @@ while (true) {
   }
 
   addScore(choice, computerChoice);
-  console.log(
+  prompt(
     `Round: ${counter} \nUser Score: ${userScore} | Comp Score: ${compScore}`
   );
 
