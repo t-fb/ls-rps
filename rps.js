@@ -1,13 +1,14 @@
 const readline = require('readline-sync');
-const VALID_CHOICES = ['rock', 'paper', 'scissors'];
 
-function prompt(message) {
-  console.log(`=> ${message}`);
-}
+const VALID_CHOICES = ['rock', 'paper', 'scissors'];
 
 let userScore = 0;
 let compScore = 0;
 const winningScore = 3;
+
+function prompt(message) {
+  console.log(`=> ${message}`);
+}
 
 // player wins round
 function userRoundWin() {
@@ -75,6 +76,7 @@ while (true) {
 
   if (userScore === winningScore || compScore === winningScore) {
     prompt('Do you want to play again (y/n)?');
+
     let answer = readline.question().toLowerCase();
     while (answer[0] !== 'n' && answer[0] !== 'y') {
       prompt('Please enter "y" or "n".');
